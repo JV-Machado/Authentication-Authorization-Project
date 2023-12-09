@@ -7,7 +7,6 @@ import java.util.stream.Collectors;
 import javax.persistence.EntityNotFoundException;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -15,7 +14,6 @@ import org.springframework.transaction.annotation.Transactional;
 import com.projects.gamelibrary.dto.GameDTO;
 import com.projects.gamelibrary.entities.Game;
 import com.projects.gamelibrary.repositories.GameRepository;
-import com.projects.gamelibrary.services.exceptions.DatabaseException;
 import com.projects.gamelibrary.services.exceptions.ResourceNotFoundException;
 
 @Service
